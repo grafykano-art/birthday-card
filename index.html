@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>عيد ميلاد سعيد</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <img src="photo1.jpg" class="profile-pic" alt="صورة بره">
+        <button class="open-btn" onclick="openLetter()">اضغط هنا عشان تفتح الجواب 💌</button>
+    </div>
+
+    <div id="letterOverlay" class="letter-overlay" onclick="closeLetter()">
+        <div class="letter-content" onclick="event.stopPropagation()">
+            <img src="photo2.jpg" class="inside-pic" alt="صورة جوه">
+            
+            <div class="text-content">
+                <h2>كل سنة وانتي طيبة! 😍</h2>
+                <p>أحلى أيام هي اللي بنقضيها سوا.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
